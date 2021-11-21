@@ -6,6 +6,8 @@ class Customer(models.Model):
     user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=200, null=True)
     email = models.CharField(max_length=200, null=True)
+    # username = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
+    # email = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

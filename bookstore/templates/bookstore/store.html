@@ -18,7 +18,7 @@
                 <hr>
                 {% if page_obj.has_next %}
                     <a href="{% url 'store' %}"><button data-product={{ product.id }} data-action="add" class=" btn btn-outline-secondary add-btn update-cart" >add to cart</button></a>
-{#                {% endif %}#}
+
                 {% elif page_obj.has_previous %}
                     <a href="?page=2"><button data-product={{ product.id }} data-action="add" class=" btn btn-outline-secondary add-btn update-cart" >add to cart</button></a>
                 {% endif %}

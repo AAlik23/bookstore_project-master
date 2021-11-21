@@ -10,7 +10,11 @@
     {% block content %}
 
 
-
+                    <img style="padding-left: 17px" src="{{ products.ImageURL}}"  width="640" height="380" name="myImage"
+                    onclick="myImage.height=570;myImage.width=960"
+                    ondblclick="myImage.width=640;myImage.height=380">
+                        <br>
+                    <br>
 
 
         <div class="col-lg-12">
@@ -30,11 +34,7 @@
                   </table>
             </div>
         <br>
-                    <img src="{{ products.ImageURL}}"  width="640" height="380" name="myImage"
-                    onclick="myImage.height=570;myImage.width=960"
-                    ondblclick="myImage.width=640;myImage.height=380">
-                        <br>
-                    <br>
+
         </div>
     {% endblock content %}
 </body>
